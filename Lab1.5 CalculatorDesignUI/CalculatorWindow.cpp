@@ -30,5 +30,8 @@ CalculatorWindow::CalculatorWindow() : wxFrame(nullptr, wxID_ANY, "Ortiz - Calcu
 	BinaryButton = new wxButton(this, wxID_ANY, "Bin", wxPoint(135, 220), wxSize(25, 55));
 	HexButton = new wxButton(this, wxID_ANY, "Hex", wxPoint(135, 160), wxSize(25, 55));
 	DeciButton = new wxButton(this, wxID_ANY, ".", wxPoint(225, 250), wxSize(25, 25));
+
+	NumberEntryBox = new wxTextCtrl(this, wxID_ANY, "", wxPoint(135, 100), wxSize(145, 25),
+		wxTE_MULTILINE | wxTE_RICH, wxDefaultValidator, wxTextCtrlNameStr);
 }
 		

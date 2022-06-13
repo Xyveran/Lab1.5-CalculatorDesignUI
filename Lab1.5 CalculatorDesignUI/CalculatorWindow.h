@@ -13,8 +13,11 @@ private:
 	wxButton* BinaryButton, * HexButton, * DeciButton;
 
 	
+
 public:
 	CalculatorWindow();
+
+	wxTextCtrl* NumberEntryBox;
 
 };
 
