@@ -1,8 +1,15 @@
 #pragma once
 #include "wx/wx.h"
 
+
+
 class CalculatorWindow : public wxFrame
 {
+public:
+	CalculatorWindow();
+
+	wxTextCtrl* NumberEntryBox;
+
 private:
 	wxButton* PlusButton, * MinusButton;
 	wxButton* DiviButton, * MultiButton;
@@ -12,12 +19,6 @@ private:
 	wxButton* FiveButton, * SixButton, * SevenButton, * EightButton, * NineButton;
 	wxButton* BinaryButton, * HexButton, * DeciButton;
 
-	
-
-public:
-	CalculatorWindow();
-
-	wxTextCtrl* NumberEntryBox;
-
+	wxDECLARE_EVENT_TABLE();
 };
 

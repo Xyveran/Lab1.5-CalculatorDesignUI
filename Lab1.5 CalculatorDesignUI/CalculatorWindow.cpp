@@ -1,5 +1,9 @@
 #include "CalculatorWindow.h"
 
+wxBEGIN_EVENT_TABLE(CalculatorWindow, wxFrame)
+
+wxEND_EVENT_TABLE()
+
 CalculatorWindow::CalculatorWindow() : wxFrame(nullptr, wxID_ANY, "Ortiz - Calculator", wxPoint(50, 50), wxSize(310, 330))
 {
 	PlusButton = new wxButton(this, wxID_ANY, "+", wxPoint(255,130), wxSize(25, 25));
@@ -31,6 +35,7 @@ CalculatorWindow::CalculatorWindow() : wxFrame(nullptr, wxID_ANY, "Ortiz - Calcu
 	HexButton = new wxButton(this, wxID_ANY, "Hex", wxPoint(135, 160), wxSize(25, 55));
 	DeciButton = new wxButton(this, wxID_ANY, ".", wxPoint(225, 250), wxSize(25, 25));
 
+	//From wxWidgets.org documentation
 	NumberEntryBox = new wxTextCtrl(this, wxID_ANY, "", wxPoint(135, 100), wxSize(145, 25),
 		wxTE_MULTILINE | wxTE_RICH, wxDefaultValidator, wxTextCtrlNameStr);
 }
