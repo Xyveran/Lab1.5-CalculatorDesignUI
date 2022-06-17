@@ -2,7 +2,6 @@
 #include "wx/wx.h"
 
 
-
 class CalculatorWindow : public wxFrame
 {
 private:
@@ -19,6 +18,7 @@ private:
 public:
 	CalculatorWindow();
 	void OnButtonClick(wxCommandEvent& evt);
+	void BindButton(wxButton* button);
 
 	wxDECLARE_EVENT_TABLE();
 };
