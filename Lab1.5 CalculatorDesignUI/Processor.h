@@ -20,6 +20,7 @@ public:
 	void SetBaseNumber(int number) {
 		baseNumber = number;
 	}
+
 	void SetOtherNumber(int number) {
 		otherNumber = number;
 	}
