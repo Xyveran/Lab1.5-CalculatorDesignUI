@@ -135,10 +135,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AddCommand.h" />
     <ClInclude Include="ButtonFactory.h" />
     <ClInclude Include="CalculatorApp.h" />
     <ClInclude Include="CalculatorWindow.h" />
+    <ClInclude Include="DivideCommand.h" />
+    <ClInclude Include="Header.h" />
+    <ClInclude Include="IBaseCommand.h" />
+    <ClInclude Include="MultiplyCommand.h" />
     <ClInclude Include="Processor.h" />
+    <ClInclude Include="SubtractCommand.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ButtonFactory.cpp" />

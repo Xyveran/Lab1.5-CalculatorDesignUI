@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "IBaseCommand.h"
 
 class Processor
 {
