@@ -4,12 +4,19 @@
 
 class AddCommand : public IBaseCommand {
 private:
-
+	Processor* _processor = nullptr;
+	int _base = 0;
+	int _other = 0;
 public:
-	AddCommand() {
+	AddCommand(Processor* processor, int base, int other) { 
+		_processor = processor;
+		_base = base;
+		_other = other;
 
 	}
 	void Execute() {
-		AddCommand();
+		_processor->SetBaseNumber(_base);
+		_processor->SetOtherNumber(_other);
+		_processor->GetSum();
 	}
 };
